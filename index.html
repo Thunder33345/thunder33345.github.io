@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <title>Thunder33345</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+  <!-- Js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="resources/js/bootstrap.min.js"></script>
+  <!--Fonts-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  <style>
+    .icon {
+      width: 24px;
+
+      height: 24px;
+      margin-right: 2px;
+    }
+    .social-links {
+      border-bottom: 1px dotted #000000;
+      text-decoration: none;
+      color: #418aa3;
+    }
+    .social-links:hover {
+      border-bottom: 1px dotted #000000;
+      text-decoration: none;
+      color: #418aa3;
+    }
+  </style>
+  <script>
+    // FontAwesomeConfig = { autoReplaceSvg: 'nest' }
+    $('document').ready(
+      function () {
+        let closeable = $('.collapse');
+        closeable.each(
+          function (index, element) {
+            let toggle = $(element);
+            toggle.on('show.bs.collapse', function (info) {
+              $('[data-owned="#' + info.target.id + '"]').addClass('fa-minus-square').removeClass('fa-plus-square');
+            });
+            toggle.on('hide.bs.collapse', function (info) {
+              $('[data-owned="#' + info.target.id + '"]').removeClass('fa-minus-square').addClass('fa-plus-square');
+            });
+          }
+        );
+      }
+    );
+  </script>
+</head>
+<body>
+<!--suppress CssOverwrittenProperties -->
+<div class="jumbotron-fluid text-center pb-5" id="top"
+    style="
+    background: url(resources/profile/banner.jpg)no-repeat;
+    background: linear-gradient(to bottom, transparent 20%, white 100%), url(resources/profile/banner.jpg)no-repeat;
+    background-size: cover;
+">
+  <img src="resources/profile/profile.jpg" class="img-fluid mt-5" style="border-radius: 9%;">
+  <h1>Thunder33345</h1>
+  <h3>A Developer</h3>
+</div>
+<div class="container">
+  <ul class="nav nav-tabs mb-3" id="aboutTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="tabb-about" data-toggle="tab" href="#tab-about" role="tab">About Me</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="tabb-skills" data-toggle="tab" href="#tab-skills" role="tab">My Skills</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="tab-about" role="tabpanel">
+      <p>
+        I am a developer, I program mostly as a hobby and for fun. I learnt most languages by self taught<br>
+        I am interested in technology advances, security, privacy, blockchain(currencies and concept)and the decentralization of the internet<br>
+        Nowadays I just live a live of having to debug code less often
+      </p>
+    </div>
+    <div class="tab-pane fade" id="tab-skills" role="tabpanel">
+      <!--todo redone, maybe with collapse cards-->
+      <h3>My Skills</h3>
+      <h5>You can also <a href="#myProjects">view my projects below!</a></h5>
+      <div class="card mb-2" style="">
+        <div class="card-body">
+          <h5 class="card-title">PHP</h5>
+          <p class="card-text">
+            I can make some advanced PHP websites,<br>
+            I know basic PHP good practices and OOP<br>
+            I also know how to make Pocketmine server plugins</p>
+        </div>
+      </div>
+      <div class="card mb-2">
+        <div class="card-body">
+          <h5 class="card-title">Frontend Website Building</h5>
+          <p class="card-text">
+            I can make decent websites, like this one!<br>
+            I know HTML CSS and general bootstrap framework, not the best at JS
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid" style="background-color: #d7d7d7">
+  <div class="container text-center pb-3">
+    <h1 class="pt-2" id="meetMe">Come meet me</h1>
+    <ul style="list-style: none " class="text-left pt-2">
+      <li>
+        <img src="resources/logo/twitter.png" class="icon"> Twitter:
+        <a class="social-links" target="_blank" href="https://twitter.com/Thunder33345">@Thunder33345</a>
+      </li>
+      <li><img class="icon" src="./resources/logo/discord.svg">Discord: Thunder33345#9999 (Please contact me via my
+        server not friends)
+      </li>
+      <li><img class="icon" src="./resources/logo/discord.svg">Discord Server:
+        <a class="social-links" target="_blank" href="https://discord.me/thunder33345">Invite
+          Link Here</a> (Contact me elsewhere me if it's broken)
+      </li>
+      <!--OR https://discord.gg/uBghvNp !-->
+      <li><img class="icon" src="./resources/logo/github.png">Github:
+        <a class="social-links" target="_blank" href="https://github.com/Thunder33345">Thunder33345</a>
+      </li>
+      <li><img class="icon" src="./resources/logo/github.png">Pocketmine Plugins Github:
+        <a class="social-links" target="_blank" href="https://github.com/ThunderDoesPlugins">ThunderDoesPlugins</a>
+      </li>
+      <li><img class="icon" src="./resources/logo/pmmp.png">PMMP Forums:
+        <a class="social-links" target="_blank" href="https://forums.pmmp.io/members/thunder33345.15/">Thunder33345</a>
+      </li>
+    </ul>
+    <h3>On ZeroNet</h3>
+    <div class="alert alert-info alert-dismissible fade show mb-2" role="alert">
+      <strong>Links below can't be viewed without Zeronet client</strong>, you will have to install it
+      <a href="https://ZeroNet.io" class="alert-link" style=" border-bottom: 1px dotted #000000; text-decoration: none">Here</a> first to view it.<br>
+      ZeroNet is a distributed network where people can express freely devoid of censorship
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <ul style="list-style: none " class="text-left">
+      <li>
+        <img src="resources/logo/zeronet.png" class="icon"> Blog:
+        <a class="social-links" target="_blank" href="http://127.0.0.1:43110/1648uDJu8HaSjiYR6p8KJMGtKGQyUdFNqS/">My Blog</a>
+      </li>
+      <li>
+        <img src="resources/logo/zerome.svg" class="icon"> Zerome:
+        <a class="social-links" target="_blank" href=
+            "http://127.0.0.1:43110/Me.ZeroNetwork.bit/?Profile/1SunAWK2VUT9GQK32MpwRfFPVgcBSJN9a/1AHEQxyRG9s6owyJHShB4U4rg9GL5FMX5K/thunder33345@zeroid.bit"
+        >
+          Thunder33345@zeroid.bit</a> (My social media page)
+      </li>
+      <li>
+        <img src="resources/logo/zeronet.png" class="icon"> ZeroTalk:
+        <a class="social-links" target="_blank" href="http://127.0.0.1:43110/Talk.ZeroNetwork.bit/">ZeroTalk</a> (I hang out there)
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="container mt-3">
+  <ul class="nav nav-tabs mb-2" id="myProjects" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="tabb-websites" data-toggle="tab" href="#tab-websites" role="tab">My Websites</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="tabb-zeronet" data-toggle="tab" href="#tab-zeronet" role="tab">My Zeronet Sites</a></li>
+    <li class="nav-item">
+      <a class="nav-link" id="tabb-plugins" data-toggle="tab" href="#tab-plugins" role="tab">My Plugins</a></li>
+  </ul>
+  <div class="tab-content" id="projectsTabContent">
+    <div class="tab-pane fade show active" id="tab-websites" role="tabpanel">
+      <h3>Webpages</h3>
+      <h5>Here's some sites I created</h5>
+      <div class="card mb-2">
+        <div class="card-body">
+          <h5 class="card-title"><a href="https://thunder33345.github.io/">My Personal Page</a></h5>
+          <p class="card-text">My own personal page, contains info and list of some projects</p>
+        </div>
+      </div>
+      <div class="card mb-2">
+        <div class="card-body">
+          <h5 class="card-title"><a href="https://thunder33345.github.io/timezone/">Time Zone teller</a></h5>
+          <p class="card-text">A page that tells your timezone using javascript</p>
+        </div>
+      </div>
+      <div class="card mb-2">
+        <div class="card-body">
+          <h5 class="card-title"><a href="https://thunder33345.github.io/archiveSite">My Old Personal Page</a></h5>
+          <p class="card-text">My old personal page when I first fully learn the basic of CSS and HTML</p>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="tab-zeronet" role="tabpanel">
+      <h3>Zeronet</h3>
+      <h5>Here's some sites i created at zeronet</h5>
+      <div class="alert alert-info fade show mb-2" role="alert">
+        <strong>Links below can't be viewed without Zeronet client</strong>, you will have to install it
+        <a href="https://ZeroNet.io" class="alert-link" style=" border-bottom: 1px dotted #000000; text-decoration: none">Here</a> first to view it.<br>
+        ZeroNet is a distributed network where people can express freely devoid of censorship
+      </div>
+      <div class="card mb-2">
+        <div class="card-body">
+          <h5 class="card-title">
+            <a href="http://127.0.0.1:43110/1648uDJu8HaSjiYR6p8KJMGtKGQyUdFNqS/">Thunder's Blog</a>
+          </h5>
+          <h6 class="card-subtitle mb-1 text-muted">Blog</h6>
+          <p class="card-text">A simple blog that's clone of ZeroBlog.</p>
+        </div>
+      </div>
+      <div class="card mb-2">
+        <div class="card-body">
+          <h5 class="card-title">
+            <a href="http://127.0.0.1:43110/14aubnR5P6bb2QHadJAv33tmEmuNG4vQ7F/">Zero Switchboard</a></h5>
+          <h6 class="card-subtitle mb-1 text-muted">Prototype: master seed storer</h6>
+          <p class="card-text">A prototype site that stores your masterseed allowing you to copy and paste it easily(for switching accounts).</p>
+        </div>
+      </div>
+      <div class="card mb-2">
+        <div class="card-body">
+          <h5 class="card-title">More to come!</h5>
+          <p class="card-text">Stay Tuned!</p>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="tab-plugins" role="tabpanel">
+      <h3>Plugins</h3>
+      <h5>Some notable plugins I made for pocketmine</h5>
+      <h6>View the rest at my <a href="https://github.com/ThunderDoesPlugins">Github repo</a></h6>
+      <div class="card mb-2">
+        <div class="card-body">
+          <h5 class="card-title mb-2"><a href="https://github.com/ThunderDoesPlugins/WorldTP">World TP</a></h5>
+          <h6 class="card-subtitle mb-1 text-muted">Teleport between worlds with ease!</h6>
+          <p class="card-text">A plugin I made to allow people to teleport between worlds, as a bonus there's ways to load unload and list worlds.</p>
+        </div>
+      </div>
+      <div class="card mb-2">
+        <div class="card-body">
+          <h5 class="card-title"><a href="https://github.com/ThunderDoesPlugins/StaffChat">Staff Chat</a></h5>
+          <h6 class="card-subtitle mb-1 text-muted">An Advance staff chat plugins for your staff members</h6>
+          <p class="card-text">A plugin I made to provide server staff a simple private chat with overkilled features.</p>
+        </div>
+      </div>
+      <div class="card mb-2">
+        <div class="card-body">
+          <h5 class="card-title"><a href="https://github.com/ThunderDoesPlugins/DailyRewards">Daily Rewards</a></h5>
+          <h6 class="card-subtitle mb-1 text-muted">Reward players to keep them come back daily!</h6>
+          <p class="card-text">
+            An old plugin that aimed to encourage players to login daily I made long time ago<br>
+            by allowing server owner to give users an increasing amount of reward each day to keep them coming back.
+          </p>
+        </div>
+      </div>
+      <div class="card mb-2">
+        <div class="card-body">
+          <h5 class="card-title"><a href="https://github.com/ThunderDoesPlugins/DailyRewards">Twix</a></h5>
+          <h6 class="card-subtitle mb-1 text-muted">Tweet at the comfort of your server!</h6>
+          <p class="card-text">
+            An old plugin that allows admins to tweet from server<br>
+            as a bonus there's an overkill api addition for developers to use.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="text-center">
+  <!--footer-->
+  <small>Made By Thunder33345</small>
+</div>
+</body>
+</html>
